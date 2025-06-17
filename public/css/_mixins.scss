@@ -1,0 +1,104 @@
+@mixin flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin flex-between{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
+@mixin flex-around{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+}
+@mixin flex-evenly{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+@mixin flex-between-column{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+@mixin flex-around-column{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+@mixin flex-evenly-column{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+@mixin mp_0{
+    margin: 0;
+    padding: 0;
+}
+@mixin classic_a{
+    text-decoration: none;
+    color: white;
+}
+@mixin black_classic_a{
+    text-decoration: none;
+    color: black;
+}
+@mixin grid($row, $col, $gap){
+    display: grid;
+    grid-template-columns: repeat($row, 1fr);
+    grid-template-rows: repeat($col, 1fr);
+    gap: $gap;
+}
+@mixin fixed{
+    position: fixed;
+    z-index: 999;
+}
+@mixin bg-fill($wave){
+    background:{
+        size: cover;
+        position: center;
+        repeat: no-repeat;
+        image: url($wave);
+    }
+}
+@mixin object-cover{
+    object:{
+        fit: cover;
+        position: center;
+        repeat: no-repeat;
+    }
+}
+@mixin b_border{
+    background: transparent;
+    border: 1px solid #e1e1e1;
+}
+@mixin orange_span($size){
+    color: orange;
+    font:{
+        size: $size;
+        weight: 500;
+    }
+    cursor: pointer;
+}
+@mixin load_more{
+    border: 1px solid green;
+    color: green;
+    border-radius: 4rem;
+    background: rgba(0, 0, 0, 0);
+    transition: all .2s;
+    font-size: 2rem;
+
+    &:hover{
+        background: green;
+        color: white;
+        border: none;
+    }
+}

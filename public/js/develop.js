@@ -1,0 +1,51 @@
+let photo = document.querySelectorAll('.mini')
+let first = document.getElementById('first')
+let second = document.getElementById('second')
+let third = document.getElementById('third')
+let fourth = document.getElementById('fourth')
+let fiveth = document.getElementById('fiveth')
+let big_photo = document.getElementById('main_picture')
+
+photo.forEach(a => {
+    a.addEventListener('click', () => {
+        photo.forEach(b => {
+            b.classList.remove('across')
+        })
+        a.classList.add('across')
+    })
+})
+first.addEventListener('click', () => {
+    big_photo.classList.add('KIM_10')
+    big_photo.classList.remove('second')
+    big_photo.classList.remove('third')
+    big_photo.classList.remove('fourth')
+    big_photo.classList.remove('fiveth')
+})
+second.addEventListener('click', () => {
+    big_photo.classList.remove('first')
+    big_photo.classList.add('second')
+    big_photo.classList.remove('third')
+    big_photo.classList.remove('fourth')
+    big_photo.classList.remove('fiveth')
+})
+third.addEventListener('click', () => {
+    big_photo.classList.remove('first')
+    big_photo.classList.remove('second')
+    big_photo.classList.add('third')
+    big_photo.classList.remove('fourth')
+    big_photo.classList.remove('fiveth')
+})
+fourth.addEventListener('click', () => {
+    big_photo.classList.remove('first')
+    big_photo.classList.remove('second')
+    big_photo.classList.remove('third')
+    big_photo.classList.add('fourth')
+    big_photo.classList.remove('fiveth')
+})
+fiveth.addEventListener('click', () => {
+    big_photo.classList.remove('first')
+    big_photo.classList.remove('second')
+    big_photo.classList.remove('third')
+    big_photo.classList.remove('fourth')
+    big_photo.classList.add('fiveth')
+})
