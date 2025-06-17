@@ -1,0 +1,333 @@
+@import
+    "mixins.scss";
+html{
+  font-size: 10px;
+}
+main{
+  width: 100%;
+  height: 2700px;
+  @include flex-between-column;
+
+  .section_1{
+    width: 100%;
+    height: 490px;
+    @include bg-fill("../img/forUs.png")
+  }
+  .section_2{
+    width: 90%;
+    height: 250px;
+    @include flex-between;
+
+    .left_cont{
+      width: 60%;
+      height: 100%;
+      @include flex-between-column;
+      align-items: start;
+
+      p{
+        position: relative;
+        left: 5%;
+        color: #3f3f3f;
+      }
+    }
+  }
+  .section_3{
+    width: 70%;
+    height: 270px;
+    text-align: justify;
+  }
+  .section_4{
+    width: 90%;
+    height: 320px;
+    @include flex-between;
+
+    .left_cont{
+      width: 60%;
+      height: 100%;
+      @include flex-between-column;
+      align-items: start;
+
+      p{
+        position: relative;
+        left: 30%;
+        color: #3f3f3f;
+      }
+    }
+  }
+  .section_5{
+    width: 90%;
+    height: 750px;
+    @include flex-between;
+
+    .left_cont{
+      width: 60%;
+      height: 100%;
+      @include flex-between-column;
+      align-items: start;
+
+      span{
+        font-size: 2.2rem;
+        color: black;
+      }
+      p{
+        position: relative;
+        left: 5%;
+        color: #3f3f3f;
+      }
+    }
+  }
+}
+@media (max-width: 1440px) {
+  html{
+    font-size: 9px;
+  }
+  main{
+    height: 2300px;
+
+    .section_1{
+      height: 490px;
+    }
+    .section_2{
+      height: 250px;
+      @include flex-between;
+
+      .left_cont{
+        width: 60%;
+        height: 100%;
+
+        p{
+          left: 5%;
+        }
+      }
+    }
+    .section_3{
+      width: 70%;
+      height: 240px;
+    }
+    .section_4{
+      width: 90%;
+      height: 320px;
+
+      .left_cont{
+        width: 60%;
+        height: 100%;
+
+        p{
+          left: 30%;
+        }
+      }
+    }
+    .section_5{
+      width: 90%;
+      height: 650px;
+      @include flex-between;
+
+      img{
+        width: 35%;
+      }
+      .left_cont{
+        width: 60%;
+        height: 100%;
+
+        p{
+          left: 5%;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1024px) {
+  html{
+    font-size: 8px;
+  }
+  main{
+    height: 2100px;
+
+    .section_1{
+      height: 490px;
+    }
+    .section_2{
+      height: 250px;
+      @include flex-between;
+
+      .image_cont{
+        width: 35%;
+        img{
+          width: 100%;
+        }
+      }
+      .left_cont{
+        width: 60%;
+        height: 100%;
+
+        p{
+          left: 5%;
+        }
+      }
+    }
+    .section_3{
+      width: 70%;
+      height: 240px;
+    }
+    .section_4{
+      width: 90%;
+      height: 270px;
+
+      .left_cont{
+        width: 60%;
+        height: 100%;
+
+        p{
+          left: 30%;
+        }
+      }
+    }
+    .section_5{
+      width: 90%;
+      height: 550px;
+      @include flex-between;
+
+      img{
+        width: 35%;
+      }
+      .left_cont{
+        width: 60%;
+        height: 100%;
+
+        p{
+          left: 5%;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  html{
+    font-size: 7px;
+  }
+  main{
+    height: 2100px;
+
+    .section_1{
+      height: 400px;
+    }
+    .section_2{
+      height: 250px;
+      @include flex-between;
+
+      .image_cont{
+        width: 35%;
+        img{
+          width: 100%;
+        }
+      }
+      .left_cont{
+        width: 65%;
+        height: 100%;
+
+        p{
+          left: 5%;
+        }
+      }
+    }
+    .section_3{
+      width: 70%;
+      height: 240px;
+    }
+    .section_4{
+      width: 90%;
+      height: 270px;
+
+      .left_cont{
+        width: 60%;
+        height: 100%;
+
+        p{
+          left: 30%;
+        }
+      }
+    }
+    .section_5{
+      width: 90%;
+      height: 550px;
+      @include flex-between;
+
+      img{
+        width: 35%;
+      }
+      .left_cont{
+        width: 60%;
+        height: 100%;
+
+        p{
+          left: 5%;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 425px) {
+  html{
+    font-size: 6px;
+  }
+  main{
+    height: 2100px;
+
+    .section_1{
+      height: 300px;
+    }
+    .section_2{
+      height: 460px;
+      @include flex-between-column;
+
+      .image_cont{
+        width: 100%;
+        img{
+          width: 100%;
+        }
+      }
+      .left_cont{
+        width: 100%;
+        height: 100%;
+
+        p{
+          left: 0;
+        }
+      }
+    }
+    .section_3{
+      width: 70%;
+      height: 370px;
+    }
+    .section_4{
+      width: 90%;
+      height: 240px;
+
+      .left_cont{
+        width: 100%;
+        height: 100%;
+
+        p{
+          left: 0;
+        }
+      }
+    }
+    .section_5{
+      width: 90%;
+      height: 550px;
+      @include flex-between-column;
+
+      img{
+        width: 75%;
+      }
+      .left_cont{
+        width: 100%;
+        height: 100%;
+
+        p{
+          left: 0;
+        }
+      }
+    }
+  }
+}

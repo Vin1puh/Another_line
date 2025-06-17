@@ -1,0 +1,547 @@
+@import
+    "mixins.scss";
+html{
+  font-size: 10px;
+}
+main{
+  position: relative;
+  top: 72px;
+  width: 100%;
+  height: auto;
+  background: white;
+  @include flex-between-column;
+
+  .section_1{
+    width: 100%;
+    height: 100vh;
+    @include bg-fill("../img/cosmetics_bg.png");
+    transition: 0.33s;
+
+    .s_1_cont{
+      width: 100%;
+      height: 100%;
+      @include flex-center;
+      backdrop-filter: blur(10px);
+      text-align: center;
+
+      h2{
+        width: 30%;
+        opacity: 1;
+      }
+    }
+  }
+  .section_2{
+    width: 90%;
+    height: 620px;
+    @include flex-between-column;
+    align-items: end;
+    h1{
+      cursor: pointer;
+      color: #0A2463;
+    }
+    .swiper{
+      width: 100%;
+      height: 555px;
+      @include flex-center;
+
+      .swiper-wrapper{
+        width: 100%;
+        height: 100%;
+        @include flex-between;
+
+        .swiper-slide{
+          width: 24%;
+          height: 100%;
+          @include flex-between-column;
+
+          .bottom{
+            width: 100%;
+            height: 150px;
+            @include flex-between-column;
+            border: 1px solid #0A2463;
+            background-color: #F0F0F0;
+
+            .space{
+              width: 90%;
+              height: 50%;
+              @include flex-between-column;
+              align-items: start;
+            }
+          }
+          .slider_button{
+            width: 100%;
+            height: 40px;
+            border: none;
+            border-top: 1px solid #0A2463;
+            color: #0A2463;
+            font-size: 2rem;
+            letter-spacing: 4px;
+          }
+          img{
+            height: 400px;
+            border-top: 1px solid #0A2463;
+          }
+          .otziv{
+            width: 60%;
+            height: 30%;
+            @include flex-between;
+            img{
+              border: none;
+              height: 100%;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+  }
+  .section_3{
+    display: none;
+    opacity: 0;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 90%;
+    height: 605px;
+    transition: 0.33s;
+
+    .swiper{
+      width: 100%;
+      height: 555px;
+      @include flex-center;
+
+      .swiper-wrapper {
+        width: 100%;
+        height: 100%;
+        @include flex-between;
+
+        .swiper-slide {
+          width: 24%;
+          height: 100%;
+          @include flex-between-column;
+
+          .bottom {
+            width: 100%;
+            height: 150px;
+            @include flex-between-column;
+            border: 1px solid #0A2463;
+            background-color: #F0F0F0;
+
+            .space {
+              width: 90%;
+              height: 50%;
+              @include flex-between-column;
+              align-items: start;
+            }
+          }
+
+          .slider_button {
+            width: 100%;
+            height: 40px;
+            border: none;
+            border-top: 1px solid #0A2463;
+            color: #0A2463;
+            font-size: 2rem;
+            letter-spacing: 4px;
+          }
+
+          img {
+            height: 400px;
+            border-top: 1px solid #0A2463;
+          }
+
+          .otziv {
+            width: 60%;
+            height: 30%;
+            @include flex-between;
+
+            img {
+              border: none;
+              height: 100%;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+footer{
+  position: relative;
+  top: 72px;
+}
+@media (max-width: 1440px) {
+  html{
+    font-size: 9px;
+  }
+  main{
+    top: 60px;
+
+    .section_1{
+      .s_1_cont{
+        h2{
+          width: 30%;
+        }
+      }
+    }
+    .section_2{
+      width: 90%;
+      height: 620px;
+
+      .swiper{
+        height: 555px;
+
+        .swiper-wrapper{
+          .swiper-slide{
+            width: 24%;
+            height: 100%;
+            @include flex-between-column;
+
+            .bottom{
+              width: 100%;
+              height: 150px;
+            }
+            .slider_button{
+              width: 100%;
+              height: 40px;
+            }
+            img{
+              width: 100%;
+              object-fit: contain;
+            }
+            .otziv{
+              width: 60%;
+              height: 30%;
+            }
+          }
+        }
+      }
+    }
+    .section_3{
+      width: 90%;
+      height: 605px;
+
+      .swiper{
+        width: 100%;
+        height: 555px;
+
+        .swiper-wrapper {
+          .swiper-slide {
+            width: 24%;
+            height: 100%;
+
+            .bottom {
+              width: 100%;
+              height: 150px;
+            }
+            .slider_button {
+              width: 100%;
+              height: 40px;
+            }
+            img {
+              width: 100%;
+              object-fit: contain;
+            }
+            .otziv {
+              width: 60%;
+              height: 30%;
+            }
+          }
+        }
+      }
+    }
+  }
+  footer{
+    position: relative;
+    top: 60px;
+  }
+}
+@media (max-width: 1024px) {
+  html{
+    font-size: 8px;
+  }
+  main{
+    top: 52px;
+
+    .section_1{
+      .s_1_cont{
+        h2{
+          width: 40%;
+        }
+      }
+    }
+    .section_2{
+      width: 90%;
+      height: 570px;
+
+      .swiper{
+        height: 505px;
+
+        .swiper-wrapper{
+          .swiper-slide{
+            width: 32%;
+            height: 100%;
+            @include flex-between-column;
+
+            &:last-child{
+              display: none;
+            }
+            .bottom{
+              width: 100%;
+              height: 150px;
+            }
+            .slider_button{
+              width: 100%;
+              height: 40px;
+            }
+            img{
+              width: 100%;
+              object-fit: contain;
+            }
+            .otziv{
+              width: 60%;
+              height: 30%;
+            }
+          }
+        }
+      }
+    }
+    .section_3{
+      width: 90%;
+      height: 555px;
+
+      .swiper{
+        width: 100%;
+        height: 505px;
+
+        .swiper-wrapper {
+          .swiper-slide {
+            width: 32%;
+            height: 100%;
+
+            &:last-child{
+              display: none;
+            }
+            .bottom {
+              width: 100%;
+              height: 150px;
+            }
+            .slider_button {
+              width: 100%;
+              height: 40px;
+            }
+            img {
+              width: 100%;
+              object-fit: contain;
+            }
+            .otziv {
+              width: 60%;
+              height: 30%;
+            }
+          }
+        }
+      }
+    }
+  }
+  footer{
+    position: relative;
+    top: 52px;
+  }
+}
+@media (max-width: 768px) {
+  html{
+    font-size: 7px;
+  }
+  main{
+    top: 50px;
+
+    .section_1{
+      .s_1_cont{
+        h2{
+          width: 40%;
+        }
+      }
+    }
+    .section_2{
+      width: 90%;
+      height: 520px;
+
+      .swiper{
+        height: 455px;
+
+        .swiper-wrapper{
+          .swiper-slide{
+            width: 32%;
+            height: 100%;
+            @include flex-between-column;
+
+            &:last-child{
+              display: none;
+            }
+            .bottom{
+              width: 100%;
+              height: 150px;
+            }
+            .slider_button{
+              width: 100%;
+              height: 40px;
+            }
+            img{
+              width: 100%;
+              object-fit: contain;
+            }
+            .otziv{
+              width: 60%;
+              height: 30%;
+            }
+          }
+        }
+      }
+    }
+    .section_3{
+      width: 90%;
+      height: 505px;
+
+      .swiper{
+        width: 100%;
+        height: 455px;
+
+        .swiper-wrapper {
+          .swiper-slide {
+            width: 32%;
+            height: 100%;
+
+            &:last-child{
+              display: none;
+            }
+            .bottom {
+              width: 100%;
+              height: 150px;
+            }
+            .slider_button {
+              width: 100%;
+              height: 40px;
+            }
+            img {
+              width: 100%;
+              object-fit: contain;
+            }
+            .otziv {
+              width: 60%;
+              height: 30%;
+            }
+          }
+        }
+      }
+    }
+  }
+  .space{
+    width: 100%;
+    height: 40px;
+  }
+  footer{
+    position: relative;
+    top: 50px;
+  }
+}
+@media (max-width: 425px) {
+  html{
+    font-size: 6px;
+  }
+  main{
+    top: 42px;
+
+    .section_1{
+      .s_1_cont{
+        h2{
+          width: 50%;
+        }
+      }
+    }
+    .section_2{
+      width: 90%;
+      height: 1240px;
+
+      .swiper{
+        height: 1205px;
+
+        .swiper-wrapper{
+          @include grid(2,2,5%);
+          .swiper-slide{
+            width: 100%;
+            height: 100%;
+            @include flex-between-column;
+
+            &:last-child{
+              display: flex;
+            }
+            .bottom{
+              width: 100%;
+              height: 150px;
+            }
+            .slider_button{
+              width: 100%;
+              height: 40px;
+            }
+            img{
+              width: 100%;
+              object-fit: contain;
+            }
+            .otziv{
+              width: 60%;
+              height: 30%;
+            }
+          }
+        }
+      }
+    }
+    .section_3{
+      width: 90%;
+      height: 600px;
+
+      .swiper{
+        width: 100%;
+        height: 600px;
+
+        .swiper-wrapper {
+          @include grid(2,1,5%);
+          .swiper-slide {
+            width: 100%;
+            height: 100%;
+
+            &:last-child{
+              display: none;
+            }
+            &:nth-child(3){
+              display: none;
+            }
+            .bottom {
+              width: 100%;
+              height: 150px;
+            }
+            .slider_button {
+              width: 100%;
+              height: 40px;
+            }
+            img {
+              width: 100%;
+              object-fit: contain;
+            }
+            .otziv {
+              width: 60%;
+              height: 30%;
+            }
+          }
+        }
+      }
+    }
+  }
+  .space{
+    width: 100%;
+    height: 40px;
+  }
+  footer{
+    position: relative;
+    top: 42px;
+  }
+}

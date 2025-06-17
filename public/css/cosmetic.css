@@ -1,0 +1,253 @@
+html {
+  font-size: 10px;
+}
+
+main {
+  position: relative;
+  top: 72px;
+  width: 100%;
+  height: 1500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+main .section_1 {
+  width: 90%;
+  height: 800px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: start;
+}
+main .section_1 img {
+  height: 100%;
+  object-fit: contain;
+}
+main .section_1 .text_cont {
+  position: relative;
+  top: 10%;
+  width: 40%;
+  height: 35%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  align-items: start;
+}
+main .section_1 .text_cont .line {
+  width: 100%;
+  height: 2px;
+  background-color: #0A2463;
+}
+main .section_2 {
+  width: 90%;
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+main .section_2 .card_block {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+main .section_2 .card_block .top {
+  border: 1px solid #0A2463 !important;
+}
+main .section_2 .card_block .card {
+  width: 23%;
+  height: 100%;
+  border: 1px solid #dfdfdf;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+}
+main .section_2 .card_block .card h2 {
+  font-size: 2.4rem;
+  color: black;
+}
+main .section_2 .card_block .card h1 {
+  font-size: 3rem;
+}
+main .section_2 .card_block .card p {
+  width: 70%;
+}
+main .section_2 .card_block .card button {
+  width: 140px;
+}
+
+footer {
+  position: relative;
+  top: 72px;
+}
+
+@media (max-width: 1440px) {
+  html {
+    font-size: 9px;
+  }
+  main {
+    top: 60px;
+    height: 1200px;
+  }
+  main .section_1 {
+    height: 600px;
+  }
+  main .section_1 .text_cont {
+    width: 40%;
+    height: 35%;
+  }
+  main .section_2 {
+    width: 90%;
+    height: 600px;
+  }
+  main .section_2 .card_block {
+    width: 100%;
+    height: 80%;
+  }
+  main .section_2 .card_block .card {
+    width: 23%;
+    height: 100%;
+  }
+  main .section_2 .card_block .card p {
+    width: 70%;
+  }
+  main .section_2 .card_block .card button {
+    width: 130px;
+  }
+  footer {
+    top: 60px;
+  }
+}
+@media (max-width: 1024px) {
+  html {
+    font-size: 8px;
+  }
+  main {
+    top: 52px;
+    height: 1000px;
+  }
+  main .section_1 {
+    height: 500px;
+  }
+  main .section_1 .text_cont {
+    width: 40%;
+    height: 40%;
+  }
+  main .section_2 {
+    width: 90%;
+    height: 500px;
+  }
+  main .section_2 .card_block {
+    width: 100%;
+    height: 80%;
+  }
+  main .section_2 .card_block .card {
+    width: 23%;
+    height: 100%;
+  }
+  main .section_2 .card_block .card p {
+    width: 70%;
+  }
+  main .section_2 .card_block .card button {
+    width: 110px;
+  }
+  footer {
+    top: 52px;
+  }
+}
+@media (max-width: 768px) {
+  html {
+    font-size: 7px;
+  }
+  main {
+    top: 50px;
+    height: 800px;
+  }
+  main .section_1 {
+    height: 400px;
+  }
+  main .section_1 .text_cont {
+    width: 50%;
+    height: 50%;
+  }
+  main .section_2 {
+    width: 90%;
+    height: 400px;
+  }
+  main .section_2 .card_block {
+    width: 100%;
+    height: 80%;
+  }
+  main .section_2 .card_block .card {
+    width: 23%;
+    height: 100%;
+  }
+  main .section_2 .card_block .card p {
+    width: 70%;
+  }
+  main .section_2 .card_block .card button {
+    width: 110px;
+  }
+  footer {
+    top: 52px;
+  }
+}
+@media (max-width: 425px) {
+  html {
+    font-size: 6px;
+  }
+  main {
+    top: 42px;
+    height: 1100px;
+  }
+  main .section_1 {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  main .section_1 img {
+    height: 70%;
+  }
+  main .section_1 .text_cont {
+    width: 100%;
+    height: 30%;
+  }
+  main .section_2 {
+    width: 90%;
+    height: 600px;
+  }
+  main .section_2 .card_block {
+    width: 100%;
+    height: 80%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 5%;
+  }
+  main .section_2 .card_block .card {
+    width: 100%;
+    height: 100%;
+  }
+  main .section_2 .card_block .card p {
+    width: 70%;
+  }
+  main .section_2 .card_block .card button {
+    width: 110px;
+  }
+  footer {
+    top: 42px;
+  }
+}
+
+/*# sourceMappingURL=cosmetic.css.map */

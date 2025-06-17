@@ -1,0 +1,438 @@
+@import 
+    'mixins.scss';
+*{
+    @include mp_0;
+    scroll-behavior: smooth;
+}
+html{
+    font-size: 10px;
+    overflow-x: hidden;
+}
+.flex{
+    display: flex !important;
+}
+.none{
+    display: none !important;
+}
+.vh{
+    opacity: 0 !important;
+    visibility: hidden !important;
+}
+.visible{
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+.selected{
+    background: linear-gradient(to right, #0A2463, #1449C9);
+    color: white !important ;
+    border: none !important;
+}
+.blocked{
+    border: 2px solid red !important;
+    color: red !important;
+}
+#burger_button{
+    display: none;
+}
+h1{
+    font-size: 3rem;
+    letter-spacing: 10px
+}
+h2{
+    font-size: 3rem;
+    color: white;
+}
+h3{
+    font-size: 2.4rem;
+    color: #3f3f3f;
+}
+h4{
+    font-size: 2.4rem;
+    color: #0A2463;
+}
+h5{
+    font-size: 1.6rem;
+    color: #0A2463;
+}
+h6{
+    font-size: 5rem;
+}
+p{
+    font-size: 2rem;
+    color: #0A2463;
+
+    a{
+        color: #0A2463;
+    }
+}
+input.invalid::placeholder{
+    color: red !important;
+}
+button{
+    cursor: pointer;
+}
+.fill_button{
+    background: linear-gradient(to right, #0A2463, #1449C9);
+    border: none;
+    border-radius: 1rem;
+    height: 50px;
+    font-size: 2rem;
+    color: #fff;
+    transition: 0.33s;
+}
+.empty_button{
+    background: transparent;
+    border: 1px solid #0A2463;
+    border-radius: 1rem;
+    height: 50px;
+    font-size: 2rem;
+    color: #0A2463;
+    transition: 0.33s;
+
+    &:hover{
+        scale: 1.1;
+    }
+}
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+header{
+    @include fixed;
+    width: 100%;
+    height: 72px;
+    @include flex-center;
+    background-color: #0A2463;
+    
+    nav{
+        width: 90%;
+        height: 100%;
+        @include flex-between;
+
+        img{
+            cursor: pointer;
+        }
+        a{
+            font-size: 2rem;
+            color: white;
+            text-decoration: none;
+        }
+    }
+}
+
+.pouppup{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background: #F0F0F0;
+    @include fixed;
+}
+.space{
+    width: 100%;
+    height: 50px;
+}
+footer{
+    width: 100%;
+    height: 320px;
+    @include flex-center;
+    background: #0A2463;
+
+    img{
+        cursor: pointer;
+    }
+    .space{
+        width: 90%;
+        height: 90%;
+        @include flex-between-column;
+
+        a{
+            font-size: 2rem;
+            color: white;
+            text-decoration: none;
+        }
+        .secondary{
+            color: #bfbfbf;
+            font-size: 1.8rem;
+        }
+        .top{
+            @include flex-between;
+            align-items: start;
+            width: 100%;
+            height: 70%;
+
+            .column{
+                @include flex-between-column;
+                align-items: start;
+                height: 100%;
+            }
+            .column_2{
+                @include flex-between-column;
+                align-items: start;
+                height: 37%;
+            }
+        }
+        .bottom{
+            width: 100%;
+            height: 20%;
+            @include flex-between;
+
+            .left{
+                width: 15%;
+                height: 100%;
+                @include flex-between;
+                img{
+                    height: 100%;
+                }
+            }
+            .right{
+                width: 15%;
+                text-align: end;
+            }
+        }
+    }
+}
+@media (max-width: 1440px) {
+    html{
+        font-size: 9px;
+    }
+    .fill_button{
+        height: 50px;
+    }
+    .empty_button{
+        height: 50px;
+    }
+    header{
+        height: 60px;
+
+        nav{
+            width: 90%;
+        }
+    }
+    .space{
+        height: 50px;
+    }
+    footer{
+        height: 280px;
+        .space{
+            width: 90%;
+            height: 90%;
+            .top{
+                height: 70%;
+            }
+            .bottom{
+                height: 20%;
+
+                .left{
+                    width: 15%;
+                    height: 100%;
+                    img{
+                        height: 100%;
+                    }
+                }
+                .right{
+                    width: 15%;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 1024px) {
+    html{
+        font-size: 8px;
+    }
+    .fill_button{
+        height: 40px;
+    }
+    .empty_button{
+        height: 40px;
+    }
+    header{
+        height: 56px;
+
+        nav{
+            width: 90%;
+            img{
+                height: 50%;
+            }
+        }
+    }
+    .space{
+        height: 40px;
+    }
+    footer{
+        height: 240px;
+        .space{
+            width: 90%;
+            height: 90%;
+            .top{
+                height: 70%;
+                img{
+                    height: 20%;
+                }
+            }
+            .bottom{
+                height: 20%;
+
+                .left{
+                    width: 20%;
+                    height: 100%;
+                    img{
+                        height: 100%;
+                    }
+                }
+                .right{
+                    width: 20%;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 768px) {
+    html{
+        font-size: 7px;
+    }
+    .fill_button{
+        height: 40px;
+    }
+    .empty_button{
+        height: 40px;
+    }
+    header{
+        height: 50px;
+
+        nav{
+            width: 90%;
+        }
+    }
+    .space{
+        height: 40px;
+    }
+    footer{
+        height: 240px;
+        .space{
+            width: 90%;
+            height: 90%;
+            .top{
+                height: 70%;
+                img{
+                    height: 20%;
+                }
+            }
+            .bottom{
+                height: 20%;
+
+                .left{
+                    width: 25%;
+                    height: 100%;
+                    img{
+                        height: 100%;
+                    }
+                }
+                .right{
+                    width: 25%;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 425px) {
+    html{
+        font-size: 6px;
+    }
+    #burger_button{
+        height: 70%;
+        display: flex !important;
+    }
+    .fill_button{
+        height: 30px;
+    }
+    .empty_button{
+        height: 30px;
+    }
+    header{
+        height: 42px;
+
+        nav{
+            width: 90%;
+            a{
+                display: none;
+            }
+            img{
+                height: 50%;
+            }
+        }
+        .pouppup{
+            top: 0;
+            left: 50%;
+            width: 50vw;
+            height: 100vh;
+            background: #0A2463;
+
+            .space{
+                width: 90%;
+                height: 95%;
+                @include flex-center;
+                align-items: start;
+
+                .cont{
+                    width: 100%;
+                    height: 50%;
+                    @include flex-between-column;
+                    .forClose{
+                        width: 100%;
+                        height: 8%;
+                        @include flex-center;
+                        justify-content: end;
+
+                        img{
+                            height: 100%;
+                            cursor: pointer;
+                        }
+                    }
+                    .nav_menu{
+                        width: 100%;
+                        height: 80%;
+                        @include flex-between-column;
+                        align-items: start;
+
+                        a{
+                            font-size: 2rem;
+                            color: white;
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .space{
+        height: 40px;
+    }
+    footer{
+        height: 200px;
+        .space{
+            width: 95%;
+            height: 90%;
+            .top{
+                height: 80%;
+                img{
+                    height: 12%;
+                }
+            }
+            .bottom{
+                height: 15%;
+
+                .left{
+                    width: 30%;
+                    height: 100%;
+                    img{
+                        height: 100%;
+                    }
+                }
+                .right{
+                    width: 35%;
+                }
+            }
+        }
+    }
+}

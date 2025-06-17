@@ -1,0 +1,1296 @@
+html {
+  font-size: 10px;
+}
+
+main {
+  width: 100%;
+  height: 100vh;
+}
+main section {
+  width: 100%;
+  height: 100vh;
+}
+main .gradient {
+  background: linear-gradient(to bottom, #F0F0F0, #B1FAFF) !important;
+}
+main .section_1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+main .section_1 .s_1_card {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .section_1 .s_1_card .switch_block {
+  width: 36%;
+  height: 550px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+}
+main .section_1 .s_1_card .switch_block p {
+  display: none;
+  font-size: 2.5rem;
+}
+main .section_1 .s_1_card .first {
+  background: url("../img/KIM-10.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  transition: 0.5s;
+}
+main .section_1 .s_1_card .second {
+  background: url("../img/HSRG-9.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  transition: 0.5s;
+}
+main .section_1 .s_1_card:first-child {
+  background: linear-gradient(to bottom, #B1FAFF, #F0F0F0);
+}
+main .section_1 .s_1_card__space_reverse {
+  flex-direction: row-reverse !important;
+}
+main .section_1 .s_1_card__space, main .section_1 .s_1_card__space_reverse {
+  width: 80%;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+main .section_1 .s_1_card__space .text_cont, main .section_1 .s_1_card__space_reverse .text_cont {
+  width: 50%;
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+}
+main .section_1 .s_1_card__space .text_cont .button_cont, main .section_1 .s_1_card__space_reverse .text_cont .button_cont {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+main .section_1 .s_1_card__space .empty_button, main .section_1 .s_1_card__space_reverse .empty_button {
+  width: 140px;
+}
+main .section_1 .s_1_card__space .fill_button, main .section_1 .s_1_card__space_reverse .fill_button {
+  width: 140px;
+}
+main .section_2 {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .section_2 .asd {
+  width: 90%;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  align-items: start;
+}
+main .section_2 h1 {
+  color: #0A2463;
+}
+main .section_2 .swiper {
+  width: 100%;
+  height: 555px;
+}
+main .section_2 .swiper .swiper-wrapper .swiper-slide img {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  object-repeat: no-repeat;
+}
+main .section_2 .swiper .swiper-wrapper .swiper-slide .bottom {
+  width: 100%;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #0A2463;
+  background-color: #F0F0F0;
+}
+main .section_2 .swiper .swiper-wrapper .swiper-slide .bottom .space {
+  width: 90%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  align-items: start;
+}
+main .section_2 .swiper .swiper-wrapper .swiper-slide .slider_button {
+  width: 100%;
+  height: 40px;
+  border: none;
+  border-top: 1px solid #0A2463;
+  color: #0A2463;
+  font-size: 2rem;
+  letter-spacing: 4px;
+}
+main .section_2 .swiper .swiper-wrapper .swiper-slide img {
+  height: 400px;
+  border-top: 1px solid #0A2463;
+}
+main .section_2 .swiper .swiper-wrapper .swiper-slide .otziv {
+  width: 60%;
+  height: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+main .section_2 .swiper .swiper-wrapper .swiper-slide .otziv img {
+  border: none;
+  height: 100%;
+  cursor: pointer;
+}
+main .section_3 {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .section_3 .asd {
+  width: 90%;
+  height: 82vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  align-items: start;
+}
+main .section_3 .swiper {
+  width: 100%;
+  height: 286px;
+}
+main .section_3 .swiper .swiper-wrapper .swiper-slide {
+  border-radius: 1rem;
+}
+main .section_3 .swiper .swiper-wrapper .swiper-slide img {
+  width: 100%;
+  height: 100%;
+}
+main .section_4 {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .section_4 .grid {
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+main .section_4 .grid .left {
+  width: 49%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .section_4 .grid .left img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  object-repeat: no-repeat;
+}
+main .section_4 .grid .right {
+  width: 49%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+main .section_4 .grid .right__top {
+  width: 100%;
+  height: 49%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+main .section_4 .grid .right__top__left {
+  width: 60%;
+  height: 100%;
+}
+main .section_4 .grid .right__top__right {
+  width: 38%;
+  height: 100%;
+}
+main .section_4 .grid .right__bottom {
+  width: 100%;
+  height: 49%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+main .section_4 .grid .right__bottom__left {
+  width: 38%;
+  height: 100%;
+}
+main .section_4 .grid .right__bottom__right {
+  width: 60%;
+  height: 100%;
+}
+main .section_4 .grid .right img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  object-repeat: no-repeat;
+}
+main .section_6 {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+}
+main .section_5 {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .section_5 .asd {
+  width: 90%;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+  border-radius: 1rem;
+  border: 1px solid #0A2463;
+}
+main .section_5 .calendar {
+  width: 40%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 1rem;
+  background-color: #f0f0f0;
+  overflow: hidden;
+}
+main .section_5 .calendar .mounth {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #0A2463;
+}
+main .section_5 .calendar .table_cont {
+  width: 90%;
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .section_5 .calendar .table_cont table {
+  width: 100%;
+  height: 80%;
+}
+main .section_5 .calendar .table_cont table tr .non_active {
+  border: 2px solid #9d9d9d;
+  color: #9d9d9d;
+}
+main .section_5 .calendar .table_cont table tr td {
+  cursor: pointer;
+  border-radius: 1rem;
+  border: 2px solid #0A2463;
+  text-align: center;
+  font-size: 3rem;
+  color: #0A2463;
+  transition: color 0.33s;
+}
+main .section_5 .form {
+  width: 30%;
+  border-radius: 1rem;
+  height: 80%;
+  background: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .section_5 .form .space {
+  width: 90%;
+  height: 95%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  align-items: center;
+}
+main .section_5 .form .space p {
+  width: 100%;
+}
+main .section_5 .form .space iframe {
+  width: 100%;
+  height: 55%;
+}
+main .section_5 .form .space input {
+  width: 100%;
+  height: 40px;
+  outline: none;
+  border: none;
+  border-radius: 1rem;
+  padding-left: 1rem;
+  font-size: 2rem;
+  color: #0A2463;
+}
+main .section_5 .form .space button {
+  width: 140px;
+}
+main .section_5 .form .space button:hover {
+  scale: 1.1;
+}
+
+.forForm {
+  width: 30%;
+  height: 70%;
+  top: 15%;
+  left: 35%;
+  border-radius: 1rem;
+  border: 1px solid #0A2463;
+}
+.forForm .space {
+  width: 90%;
+  height: 95%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.forForm .space .forClose {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: end;
+}
+.forForm .space .forClose img {
+  cursor: pointer;
+  transition: 0.33s;
+}
+.forForm .space .forClose img:hover {
+  rotate: 180deg;
+  scale: 1.2;
+}
+.forForm .space iframe {
+  width: 100%;
+  height: 50%;
+}
+.forForm .space .forContact {
+  width: 100%;
+  height: 13%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.forForm .space .forContact button {
+  width: 140px;
+}
+.forForm .space .forContact button:hover {
+  scale: 1.1;
+}
+
+@media (max-width: 1440px) {
+  html {
+    font-size: 9px;
+  }
+  main .section_1 .s_1_card .switch_block {
+    width: 36%;
+    height: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  main .section_1 .s_1_card__space, main .section_1 .s_1_card__space_reverse {
+    width: 80%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+  main .section_1 .s_1_card__space .text_cont, main .section_1 .s_1_card__space_reverse .text_cont {
+    width: 50%;
+    height: 30%;
+  }
+  main .section_1 .s_1_card__space .text_cont .button_cont, main .section_1 .s_1_card__space_reverse .text_cont .button_cont {
+    width: 50%;
+  }
+  main .section_1 .s_1_card__space .empty_button, main .section_1 .s_1_card__space_reverse .empty_button {
+    width: 130px;
+  }
+  main .section_1 .s_1_card__space .fill_button, main .section_1 .s_1_card__space_reverse .fill_button {
+    width: 130px;
+  }
+  main .section_2 {
+    width: 100%;
+    height: 100vh;
+  }
+  main .section_2 .asd {
+    width: 90%;
+    height: 70vh;
+  }
+  main .section_2 .swiper {
+    width: 100%;
+    height: 555px;
+  }
+  main .section_2 .swiper .swiper-wrapper .swiper-slide img {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    object-repeat: no-repeat;
+  }
+  main .section_2 .swiper .swiper-wrapper .swiper-slide .bottom {
+    width: 100%;
+    height: 150px;
+  }
+  main .section_2 .swiper .swiper-wrapper .swiper-slide .bottom .space {
+    width: 90%;
+    height: 50%;
+  }
+  main .section_2 .swiper .swiper-wrapper .swiper-slide .slider_button {
+    height: 40px;
+    letter-spacing: 4px;
+  }
+  main .section_2 .swiper .swiper-wrapper .swiper-slide img {
+    border-top: 1px solid #0A2463;
+  }
+  main .section_2 .swiper .swiper-wrapper .swiper-slide .otziv {
+    width: 75%;
+    height: 30%;
+  }
+  main .section_3 {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  main .section_3 .asd {
+    width: 90%;
+    height: 82vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    align-items: start;
+  }
+  main .section_3 .swiper {
+    width: 100%;
+    height: 206px;
+  }
+  main .section_4 {
+    width: 100%;
+    height: 500px;
+  }
+  main .section_4 .grid {
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+  main .section_4 .grid .left {
+    width: 49%;
+    height: 100%;
+  }
+  main .section_4 .grid .left img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    object-repeat: no-repeat;
+  }
+  main .section_4 .grid .right {
+    width: 49%;
+    height: 100%;
+  }
+  main .section_4 .grid .right__top {
+    width: 100%;
+    height: 49%;
+  }
+  main .section_4 .grid .right__top__left {
+    width: 60%;
+    height: 100%;
+  }
+  main .section_4 .grid .right__top__right {
+    width: 38%;
+    height: 100%;
+  }
+  main .section_4 .grid .right__bottom {
+    width: 100%;
+    height: 49%;
+  }
+  main .section_4 .grid .right__bottom__left {
+    width: 38%;
+    height: 100%;
+  }
+  main .section_4 .grid .right__bottom__right {
+    width: 60%;
+    height: 100%;
+  }
+  main .section_5 {
+    width: 100%;
+    height: 100vh;
+  }
+  main .section_5 .asd {
+    width: 90%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+  }
+  main .section_5 .calendar {
+    width: 50%;
+    height: 80%;
+  }
+  main .section_5 .calendar .mounth {
+    width: 100%;
+    height: 10%;
+  }
+  main .section_5 .calendar .table_cont {
+    width: 90%;
+    height: 90%;
+  }
+  main .section_5 .calendar .table_cont table {
+    width: 100%;
+    height: 80%;
+  }
+  main .section_5 .form {
+    width: 40%;
+    height: 80%;
+  }
+  main .section_5 .form .space {
+    width: 90%;
+    height: 95%;
+  }
+  main .section_5 .form .space iframe {
+    width: 100%;
+    height: 55%;
+  }
+  main .section_5 .form .space input {
+    width: 100%;
+    height: 40px;
+  }
+  main .section_5 .form .space button {
+    width: 140px;
+  }
+  .forForm {
+    width: 30%;
+    height: 70%;
+    top: 15%;
+    left: 35%;
+  }
+  .forForm .space {
+    width: 90%;
+    height: 95%;
+  }
+  .forForm .space .forClose {
+    width: 100%;
+    height: 10%;
+  }
+  .forForm .space iframe {
+    width: 100%;
+    height: 50%;
+  }
+  .forForm .space .forContact {
+    width: 100%;
+    height: 13%;
+  }
+  .forForm .space .forContact button {
+    width: 140px;
+  }
+}
+@media (max-width: 1024px) {
+  html {
+    font-size: 8px;
+  }
+  main .section_1 .s_1_card .switch_block {
+    width: 36%;
+    height: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  main .section_1 .s_1_card__space, main .section_1 .s_1_card__space_reverse {
+    width: 80%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+  main .section_1 .s_1_card__space .text_cont, main .section_1 .s_1_card__space_reverse .text_cont {
+    width: 50%;
+    height: 30%;
+  }
+  main .section_1 .s_1_card__space .text_cont .button_cont, main .section_1 .s_1_card__space_reverse .text_cont .button_cont {
+    width: 60%;
+  }
+  main .section_1 .s_1_card__space .empty_button, main .section_1 .s_1_card__space_reverse .empty_button {
+    width: 110px;
+  }
+  main .section_1 .s_1_card__space .fill_button, main .section_1 .s_1_card__space_reverse .fill_button {
+    width: 110px;
+  }
+  main .section_2 {
+    width: 100%;
+    height: 100vh;
+  }
+  main .section_2 .asd {
+    width: 90%;
+    height: 70vh;
+  }
+  main .section_2 .swiper {
+    width: 100%;
+    height: 500px;
+  }
+  main .section_2 .swiper .swiper-wrapper .swiper-slide img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+    object-repeat: no-repeat;
+  }
+  main .section_2 .swiper .swiper-wrapper .swiper-slide .bottom {
+    width: 100%;
+    height: 120px;
+  }
+  main .section_2 .swiper .swiper-wrapper .swiper-slide .bottom .space {
+    width: 90%;
+    height: 50%;
+  }
+  main .section_2 .swiper .swiper-wrapper .swiper-slide .slider_button {
+    height: 40px;
+    letter-spacing: 4px;
+  }
+  main .section_2 .swiper .swiper-wrapper .swiper-slide .otziv {
+    width: 75%;
+    height: 30%;
+  }
+  main .section_2 .swiper .swiper-wrapper .swiper-slide .otziv img {
+    width: 12%;
+  }
+  main .section_3 {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  main .section_3 .asd {
+    width: 90%;
+    height: 82vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    align-items: start;
+  }
+  main .section_3 .swiper {
+    width: 100%;
+    height: 206px;
+  }
+  main .section_4 {
+    width: 100%;
+    height: 300px;
+  }
+  main .section_4 .grid {
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+  main .section_4 .grid .left {
+    width: 49%;
+    height: 100%;
+  }
+  main .section_4 .grid .left img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    object-repeat: no-repeat;
+  }
+  main .section_4 .grid .right {
+    width: 49%;
+    height: 100%;
+  }
+  main .section_4 .grid .right__top {
+    width: 100%;
+    height: 49%;
+  }
+  main .section_4 .grid .right__top__left {
+    width: 60%;
+    height: 100%;
+  }
+  main .section_4 .grid .right__top__right {
+    width: 38%;
+    height: 100%;
+  }
+  main .section_4 .grid .right__bottom {
+    width: 100%;
+    height: 49%;
+  }
+  main .section_4 .grid .right__bottom__left {
+    width: 38%;
+    height: 100%;
+  }
+  main .section_4 .grid .right__bottom__right {
+    width: 60%;
+    height: 100%;
+  }
+  main .section_5 {
+    width: 100%;
+    height: 100vh;
+  }
+  main .section_5 .asd {
+    width: 90%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+  }
+  main .section_5 .calendar {
+    width: 50%;
+    height: 80%;
+  }
+  main .section_5 .calendar .mounth {
+    width: 100%;
+    height: 10%;
+  }
+  main .section_5 .calendar .table_cont {
+    width: 90%;
+    height: 90%;
+  }
+  main .section_5 .calendar .table_cont table {
+    width: 100%;
+    height: 80%;
+  }
+  main .section_5 .form {
+    width: 40%;
+    height: 80%;
+  }
+  main .section_5 .form .space {
+    width: 90%;
+    height: 95%;
+  }
+  main .section_5 .form .space iframe {
+    width: 100%;
+    height: 55%;
+  }
+  main .section_5 .form .space input {
+    width: 100%;
+    height: 40px;
+  }
+  main .section_5 .form .space button {
+    width: 140px;
+  }
+  .forForm {
+    width: 30%;
+    height: 70%;
+    top: 15%;
+    left: 35%;
+  }
+  .forForm .space {
+    width: 90%;
+    height: 95%;
+  }
+  .forForm .space .forClose {
+    width: 100%;
+    height: 10%;
+  }
+  .forForm .space iframe {
+    width: 100%;
+    height: 50%;
+  }
+  .forForm .space .forContact {
+    width: 100%;
+    height: 13%;
+  }
+  .forForm .space .forContact button {
+    width: 140px;
+  }
+}
+@media (max-width: 768px) {
+  html {
+    font-size: 7px;
+  }
+  main .section_1 .s_1_card .switch_block {
+    width: 70%;
+    height: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  main .section_1 .s_1_card__space, main .section_1 .s_1_card__space_reverse {
+    width: 80%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column !important;
+  }
+  main .section_1 .s_1_card__space .text_cont, main .section_1 .s_1_card__space_reverse .text_cont {
+    width: 100%;
+    height: 30%;
+  }
+  main .section_1 .s_1_card__space .text_cont .button_cont, main .section_1 .s_1_card__space_reverse .text_cont .button_cont {
+    width: 40%;
+  }
+  main .section_1 .s_1_card__space .empty_button, main .section_1 .s_1_card__space_reverse .empty_button {
+    width: 110px;
+  }
+  main .section_1 .s_1_card__space .fill_button, main .section_1 .s_1_card__space_reverse .fill_button {
+    width: 110px;
+  }
+  main .section_2 {
+    width: 100%;
+    height: 100vh;
+  }
+  main .section_2 .asd {
+    width: 90%;
+    height: 70vh;
+  }
+  main .section_2 .swiper {
+    width: 100%;
+    height: 500px;
+  }
+  main .section_2 .swiper .swiper-wrapper .swiper-slide img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+    object-repeat: no-repeat;
+  }
+  main .section_2 .swiper .swiper-wrapper .swiper-slide .bottom {
+    width: 100%;
+    height: 120px;
+  }
+  main .section_2 .swiper .swiper-wrapper .swiper-slide .bottom .space {
+    width: 90%;
+    height: 50%;
+  }
+  main .section_2 .swiper .swiper-wrapper .swiper-slide .slider_button {
+    height: 40px;
+    letter-spacing: 4px;
+  }
+  main .section_2 .swiper .swiper-wrapper .swiper-slide .otziv {
+    width: 55%;
+    height: 30%;
+  }
+  main .section_2 .swiper .swiper-wrapper .swiper-slide .otziv img {
+    width: 11%;
+  }
+  main .section_3 {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  main .section_3 .asd {
+    width: 90%;
+    height: 82vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    align-items: start;
+  }
+  main .section_3 .swiper {
+    width: 100%;
+    height: 170px;
+  }
+  main .section_4 {
+    width: 100%;
+    height: 550px;
+  }
+  main .section_4 .grid {
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  main .section_4 .grid .left {
+    width: 100%;
+    height: 49%;
+  }
+  main .section_4 .grid .left img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    object-repeat: no-repeat;
+  }
+  main .section_4 .grid .right {
+    width: 100%;
+    height: 49%;
+  }
+  main .section_4 .grid .right__top {
+    width: 100%;
+    height: 49%;
+  }
+  main .section_4 .grid .right__top__left {
+    width: 60%;
+    height: 100%;
+  }
+  main .section_4 .grid .right__top__right {
+    width: 38%;
+    height: 100%;
+  }
+  main .section_4 .grid .right__bottom {
+    width: 100%;
+    height: 49%;
+  }
+  main .section_4 .grid .right__bottom__left {
+    width: 38%;
+    height: 100%;
+  }
+  main .section_4 .grid .right__bottom__right {
+    width: 60%;
+    height: 100%;
+  }
+  main .section_5 {
+    width: 100%;
+    height: 100vh;
+  }
+  main .section_5 .asd {
+    width: 90%;
+    height: 55vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+  }
+  main .section_5 .calendar {
+    width: 50%;
+    height: 80%;
+  }
+  main .section_5 .calendar .mounth {
+    width: 100%;
+    height: 10%;
+  }
+  main .section_5 .calendar .table_cont {
+    width: 90%;
+    height: 90%;
+  }
+  main .section_5 .calendar .table_cont table {
+    width: 100%;
+    height: 80%;
+  }
+  main .section_5 .form {
+    width: 40%;
+    height: 80%;
+  }
+  main .section_5 .form .space {
+    width: 90%;
+    height: 95%;
+  }
+  main .section_5 .form .space iframe {
+    width: 100%;
+    height: 55%;
+  }
+  main .section_5 .form .space input {
+    width: 100%;
+    height: 40px;
+  }
+  main .section_5 .form .space button {
+    width: 140px;
+  }
+  .forForm {
+    width: 50%;
+    height: 70%;
+    top: 15%;
+    left: 25%;
+  }
+  .forForm .space {
+    width: 90%;
+    height: 95%;
+  }
+  .forForm .space .forClose {
+    width: 100%;
+    height: 10%;
+  }
+  .forForm .space iframe {
+    width: 100%;
+    height: 50%;
+  }
+  .forForm .space .forContact {
+    width: 100%;
+    height: 13%;
+  }
+  .forForm .space .forContact button {
+    width: 140px;
+  }
+}
+@media (max-width: 425px) {
+  html {
+    font-size: 6px;
+  }
+  main .section_1 .s_1_card .switch_block {
+    width: 90%;
+    height: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  main .section_1 .s_1_card__space, main .section_1 .s_1_card__space_reverse {
+    width: 80%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column !important;
+  }
+  main .section_1 .s_1_card__space .text_cont, main .section_1 .s_1_card__space_reverse .text_cont {
+    width: 100%;
+    height: 30%;
+  }
+  main .section_1 .s_1_card__space .text_cont .button_cont, main .section_1 .s_1_card__space_reverse .text_cont .button_cont {
+    width: 60%;
+  }
+  main .section_1 .s_1_card__space .empty_button, main .section_1 .s_1_card__space_reverse .empty_button {
+    width: 90px;
+  }
+  main .section_1 .s_1_card__space .fill_button, main .section_1 .s_1_card__space_reverse .fill_button {
+    width: 90px;
+  }
+  main .section_2 {
+    width: 100%;
+    height: 100vh;
+  }
+  main .section_2 .asd {
+    width: 90%;
+    height: 80vh;
+  }
+  main .section_2 .swiper {
+    width: 80%;
+    height: 700px;
+  }
+  main .section_2 .swiper .swiper-wrapper .swiper-slide img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+    object-repeat: no-repeat;
+  }
+  main .section_2 .swiper .swiper-wrapper .swiper-slide .bottom {
+    width: 100%;
+    height: 120px;
+  }
+  main .section_2 .swiper .swiper-wrapper .swiper-slide .bottom .space {
+    width: 90%;
+    height: 50%;
+  }
+  main .section_2 .swiper .swiper-wrapper .swiper-slide .slider_button {
+    height: 40px;
+    letter-spacing: 4px;
+  }
+  main .section_2 .swiper .swiper-wrapper .swiper-slide .otziv {
+    width: 55%;
+    height: 30%;
+  }
+  main .section_2 .swiper .swiper-wrapper .swiper-slide .otziv img {
+    width: 11%;
+  }
+  main .section_3 {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  main .section_3 .asd {
+    width: 90%;
+    height: 82vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    align-items: start;
+  }
+  main .section_3 .swiper {
+    width: 100%;
+    height: 170px;
+  }
+  main .section_4 {
+    width: 100%;
+    height: 350px;
+  }
+  main .section_4 .grid {
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  main .section_4 .grid .left {
+    width: 100%;
+    height: 49%;
+  }
+  main .section_4 .grid .left img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    object-repeat: no-repeat;
+  }
+  main .section_4 .grid .right {
+    width: 100%;
+    height: 49%;
+  }
+  main .section_4 .grid .right__top {
+    width: 100%;
+    height: 49%;
+  }
+  main .section_4 .grid .right__top__left {
+    width: 60%;
+    height: 100%;
+  }
+  main .section_4 .grid .right__top__right {
+    width: 38%;
+    height: 100%;
+  }
+  main .section_4 .grid .right__bottom {
+    width: 100%;
+    height: 49%;
+  }
+  main .section_4 .grid .right__bottom__left {
+    width: 38%;
+    height: 100%;
+  }
+  main .section_4 .grid .right__bottom__right {
+    width: 60%;
+    height: 100%;
+  }
+  main .section_5 {
+    width: 100%;
+    height: 100vh;
+  }
+  main .section_5 .asd {
+    width: 90%;
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  main .section_5 .calendar {
+    width: 80%;
+    height: 40%;
+  }
+  main .section_5 .calendar .mounth {
+    width: 100%;
+    height: 10%;
+  }
+  main .section_5 .calendar .table_cont {
+    width: 90%;
+    height: 90%;
+  }
+  main .section_5 .calendar .table_cont table {
+    width: 100%;
+    height: 80%;
+  }
+  main .section_5 .form {
+    width: 80%;
+    height: 50%;
+  }
+  main .section_5 .form .space {
+    width: 90%;
+    height: 95%;
+  }
+  main .section_5 .form .space iframe {
+    width: 100%;
+    height: 35%;
+  }
+  main .section_5 .form .space input {
+    width: 100%;
+    height: 30px;
+  }
+  main .section_5 .form .space button {
+    width: 140px;
+  }
+  .forForm {
+    width: 70%;
+    height: 70%;
+    top: 15%;
+    left: 15%;
+  }
+  .forForm .space {
+    width: 90%;
+    height: 95%;
+  }
+  .forForm .space .forClose {
+    width: 100%;
+    height: 10%;
+  }
+  .forForm .space iframe {
+    width: 100%;
+    height: 50%;
+  }
+  .forForm .space .forContact {
+    width: 100%;
+    height: 13%;
+  }
+  .forForm .space .forContact button {
+    width: 140px;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

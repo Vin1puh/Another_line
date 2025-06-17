@@ -1,0 +1,89 @@
+@import
+    "mixins.scss";
+html{
+  font-size: 10px;
+}
+main{
+  width: 100%;
+  height: 100vh;
+  @include flex-center;
+
+  iframe{
+    width: 100%;
+    height: 100%;
+  }
+  section{
+    position: absolute;
+    pointer-events: none;
+    top: 7.5%;
+    left: 0.5%;
+    width: 95%;
+    height: 90%;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    .block{
+      width: 20%;
+      height: 20%;
+      background: #F0F0F0;
+      border-radius: 1rem;
+      border: 2px solid #0A2463;
+      @include flex-center;
+
+      .space{
+        width: 90%;
+        height: 80%;
+        text-align: justify;
+
+        p{
+          font-size: 2.5rem;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1440px) {
+  html{
+    font-size: 9px;
+  }
+  main{
+    section{
+      top: 6.5%;
+      left: 0.5%;
+      .block{
+        width: 25%;
+        height: 20%;
+      }
+    }
+  }
+}
+@media (max-width: 1024px) {
+  html{
+    font-size: 8px;
+  }
+  main{
+    section{
+      top: 5.5%;
+      left: 0.5%;
+      .block{
+        width: 45%;
+        height: 17%;
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  html{
+    font-size: 7px;
+  }
+  main{
+    section{
+      top: 5.5%;
+      left: 0.5%;
+      .block{
+        width: 55%;
+        height: 23%;
+      }
+    }
+  }
+}

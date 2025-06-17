@@ -1,0 +1,184 @@
+@import
+    "mixins.scss";
+html{
+  font-size: 10px;
+}
+main{
+  width: 100%;
+  height: 100vh;
+
+  .swiper{
+    width: 100%;
+    height: 100%;
+    .swiper-wrapper{
+      .first{
+        background: linear-gradient(to bottom, #1449C9, #FFD6E0);
+      }
+      .second{
+        background: linear-gradient(to bottom, #FFD6E0, #B1FAFF);
+      }
+      .third{
+        background: linear-gradient(to bottom, #B1FAFF, #f0f0f0);
+      }
+      .sixth{
+        background: linear-gradient(to top, #1449C9, #FFD6E0);
+      }
+      .fiveth{
+        background: linear-gradient(to top, #FFD6E0, #B1FAFF);
+      }
+      .fourth{
+        background: linear-gradient(to top, #B1FAFF, #f0f0f0);
+      }
+      .swiper-slide{
+        width: 100%;
+        height: 100%;
+        @include flex-center;
+
+        .reverse{
+          flex-direction: row-reverse;
+        }
+        .reverse,.space{
+          width: 90%;
+          height: 80%;
+          @include flex-between;
+
+          .text_cont{
+            width: 55%;
+            height: 30%;
+            @include flex-between-column;
+            text-align: center;
+
+            button{
+              width: 140px;
+            }
+          }
+        }
+        .image_cont{
+          width: 35%;
+          height: 60%;
+          object-position: center;
+
+          img{
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1440px) {
+  html{
+    font-size: 9px;
+  }
+  main{
+    .swiper{
+      .swiper-wrapper{
+        .swiper-slide{
+          .space{
+            @include flex-between;
+
+            .text_cont{
+              width: 50%;
+              height: 30%;
+
+              button{
+                width: 130px;
+              }
+            }
+          }
+          .image_cont{
+            width: 40%;
+            height: 60%;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1024px) {
+  html{
+    font-size: 8px;
+  }
+  main{
+    .swiper{
+      .swiper-wrapper{
+        .swiper-slide{
+          .space{
+            @include flex-between;
+
+            .text_cont{
+              width: 50%;
+              height: 30%;
+
+              button{
+                width: 110px;
+              }
+            }
+          }
+          .image_cont{
+            width: 50%;
+            height: 60%;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  html{
+    font-size: 7px;
+  }
+  main{
+    .swiper{
+      .swiper-wrapper{
+        .swiper-slide{
+          .reverse,.space{
+            @include flex-between-column;
+
+            .text_cont{
+              width: 80%;
+              height: 30%;
+
+              button{
+                width: 100px;
+              }
+            }
+          }
+          .image_cont{
+            width: 70%;
+            height: 60%;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 425px) {
+  html{
+    font-size: 6px;
+  }
+  main{
+    .swiper{
+      .swiper-wrapper{
+        .swiper-slide{
+          .reverse,.space{
+            @include flex-between-column;
+
+            .text_cont{
+              width: 90%;
+              height: 30%;
+
+              button{
+                width: 90px;
+              }
+            }
+          }
+          .image_cont{
+            width: 90%;
+            height: 60%;
+          }
+        }
+      }
+    }
+  }
+}
